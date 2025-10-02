@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — The Sai’s Café</title>
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html"><div class="logo-mark">☕</div><div class="logo-text"><span class="brand">The Sai’s</span><span class="sub">Café</span></div></a>
+
+        <nav class="main-nav" id="mainNavMenu">
+          <button id="navToggleMenu" class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn order-btn" href="https://www.ubereats.com" target="_blank" rel="noopener">Order Online</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- STICKY SUBNAV for Menu sections -->
+    <div class="menu-subnav-wrap">
+      <nav class="menu-subnav container" id="menuSubnav">
+        <a href="#coffee">Coffee</a>
+        <a href="#tea">Tea</a>
+        <a href="#breakfast">Breakfast</a>
+        <a href="#lunch">Lunch</a>
+        <a href="#bakery">Bakery</a>
+      </nav>
+    </div>
+
+    <main class="container menu-page">
+      <section id="coffee" class="menu-section">
+        <h2>Coffee</h2>
+        <p class="section-sub">Classic espresso drinks made with our signature roast.</p>
+        <div class="menu-list">
+          <!-- 10 coffee items -->
+          <div class="menu-item">
+            <div>
+              <h4>Cappuccino <span class="price">$4.50</span></h4>
+              <p class="muted">A perfect blend of our signature espresso, steamed milk, and a thick layer of microfoam.</p>
+            </div>
+            <div class="labels">
+              <span class="bestseller">Bestseller</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Latte <span class="price">$4.25</span></h4>
+              <p class="muted">Creamy steamed milk over a double shot of espresso.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Flat White <span class="price">$4.00</span></h4>
+              <p class="muted">Richer espresso to milk ratio for a bold, silky cup.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Americano <span class="price">$3.50</span></h4>
+              <p class="muted">Long black with smooth extracted espresso and hot water.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Espresso Single / Double <span class="price">$2.00 / $3.00</span></h4>
+              <p class="muted">Direct, concentrated coffee — bold and aromatic.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Mocha <span class="price">$4.75</span></h4>
+              <p class="muted">Espresso, chocolate, steamed milk, topped with whipped cream.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Caramel Macchiato <span class="price">$4.50</span></h4>
+              <p class="muted">Layered flavors of vanilla, milk, espresso and house caramel.</p>
+            </div>
+            <div class="labels">
+              <span class="bestseller">Bestseller</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Cold Brew <span class="price">$4.25</span></h4>
+              <p class="muted">Slow-steeped coffee with smooth, low-acidity profile.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Nitro Cold Brew <span class="price">$4.75</span></h4>
+              <p class="muted">Infused with nitrogen for velvety texture and creamy finish.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <h4>Affogato <span class="price">$5.50</span></h4>
+              <p class="muted">Vanilla gelato topped with a hot shot of espresso.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tea" class="menu-section">
+        <h2>Tea</h2>
+        <p class="section-sub">Loose-leaf and classic brewed teas.</p>
+        <div class="menu-list">
+          <div class="menu-item"><div><h4>English Breakfast <span class="price">$3.00</span></h4><p class="muted">Robust black tea — great with milk.</p></div></div>
+          <div class="menu-item"><div><h4>Green Tea <span class="price">$3.25</span></h4><p class="muted">Delicate, grassy notes — calming and clean.</p></div></div>
+          <div class="menu-item"><div><h4>Chai Latte <span class="price">$3.75</span></h4><p class="muted">Spiced masala blend with steamed milk.</p></div></div>
+          <div class="menu-item"><div><h4>Herbal Infusion <span class="price">$3.50</span></h4><p class="muted">Caffeine-free options (chamomile, mint).</p></div></div>
+        </div>
+      </section>
+
+      <section id="breakfast" class="menu-section">
+        <h2>Breakfast</h2>
+        <p class="section-sub">Start your day with fresh-made dishes.</p>
+        <div class="menu-list">
+          <div class="menu-item"><div><h4>Avocado Toast <span class="price">$6.50</span></h4><p class="muted">Sourdough, avocado, lemon, chili flakes.</p></div></div>
+          <div class="menu-item"><div><h4>Breakfast Sandwich <span class="price">$5.50</span></h4><p class="muted">Egg, cheddar, choice of bacon or mushroom.</p></div></div>
+          <div class="menu-item"><div><h4>Granola Bowl <span class="price">$5.00</span></h4><p class="muted">House granola, yogurt, seasonal fruit.</p></div></div>
+          <div class="menu-item"><div><h4>Oat Porridge <span class="price">$4.50</span></h4><p class="muted">Warm oats with honey and toasted seeds.</p></div></div>
+        </div>
+      </section>
+
+      <section id="lunch" class="menu-section">
+        <h2>Lunch</h2>
+        <p class="section-sub">Light lunch bowls and sandwiches.</p>
+        <div class="menu-list">
+          <div class="menu-item"><div><h4>Grilled Panini <span class="price">$8.50</span></h4><p class="muted">Roasted veggies, pesto, melted mozzarella.</p></div></div>
+          <div class="menu-item"><div><h4>Quinoa Bowl <span class="price">$9.00</span></h4><p class="muted">Quinoa, roasted chickpeas, seasonal greens.</p></div></div>
+          <div class="menu-item"><div><h4>Classic Caesar <span class="price">$7.50</span></h4><p class="muted">Crisp romaine, house dressing, parmesan.</p></div></div>
+        </div>
+      </section>
+
+      <section id="bakery" class="menu-section">
+        <h2>Bakery</h2>
+        <p class="section-sub">Freshly baked each morning.</p>
+        <div class="menu-list">
+          <div class="menu-item"><div><h4>Chocolate Croissant <span class="price">$3.75</span></h4><p class="muted">Buttery and flaky with rich chocolate.</p></div><div class="labels"><span class="bestseller">Bestseller</span></div></div>
+          <div class="menu-item"><div><h4>Almond Croissant <span class="price">$3.95</span></h4><p class="muted">Toasted almonds and frangipane filling.</p></div></div>
+          <div class="menu-item"><div><h4>Muffin (Blueberry) <span class="price">$2.95</span></h4><p class="muted">Moist muffin loaded with berries.</p></div></div>
+          <div class="menu-item"><div><h4>Scone <span class="price">$2.75</span></h4><p class="muted">Buttery scone — choose plain or fruit.</p></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer small">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo small" href="index.html"><div class="logo-mark">☕</div><div class="logo-text"><span class="brand">The Sai’s</span><span class="sub">Café</span></div></a>
+          <p>Comfort food, crafted coffee, and friendly faces.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>8258861119 · sairana587@gmail.com</p>
+        </div>
+      </div>
+      <div class="container copyright"><small>© <span id="yearMenu"></span> The Sai’s Café</small></div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — The Sai’s Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html"><div class="logo-mark">☕</div><div class="logo-text"><span class="brand">The Sai’s</span><span class="sub">Café</span></div></a>
+
+        <nav class="main-nav" id="mainNavContact">
+          <button id="navToggleContact" class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <a class="btn order-btn" href="https://www.ubereats.com" target="_blank" rel="noopener">Order Online</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container contact-page">
+      <h1>Contact</h1>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Visit Us</h3>
+          <p><strong>Address:</strong> Edmonton, Alberta</p>
+          <p><strong>Phone:</strong> 8258861119</p>
+          <p><strong>Email:</strong> <a href="mailto:sairana587@gmail.com">sairana587@gmail.com</a></p>
+
+          <h4>Opening Hours</h4>
+          <table class="hours-table" aria-label="Opening hours">
+            <tbody>
+              <tr><td>Monday</td><td>7:00 AM — 7:00 PM</td></tr>
+              <tr><td>Tuesday</td><td>7:00 AM — 7:00 PM</td></tr>
+              <tr><td>Wednesday</td><td>7:00 AM — 7:00 PM</td></tr>
+              <tr><td>Thursday</td><td>7:00 AM — 7:00 PM</td></tr>
+              <tr><td>Friday</td><td>7:00 AM — 7:00 PM</td></tr>
+              <tr><td>Saturday</td><td>8:00 AM — 8:00 PM</td></tr>
+              <tr><td>Sunday</td><td>8:00 AM — 6:00 PM</td></tr>
+            </tbody>
+          </table>
+
+          <p><a class="map-link" href="https://www.google.com/maps" target="_blank" rel="noopener">Open in Google Maps</a></p>
+          <div class="map-placeholder img-placeholder"> <img width="700px" src="https://www.google.com/maps/vt/data=3Uc0LhFIKtJomQssdtF0de-hvMHxtxLodfrs1Bo0R1zQ6M8f8h4aJTEVn3cXKbw_KjvWswOcqt9kVh83rsvzfRgVkQOkZsJ1wXv5452-udLKLWs9_09x-N0aqH35zh-FkH8SL0iGQNwKzN8ieogATKDBXCH8v3sc3LaWa2V72NATR5rXvcRp-iq8cP3J8YJuQv8lYlBQQ_DCj6FiUEfN1gU" alt="Image: Static map with a pin — replace with Google Maps static image" class="src"> </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h3>Send us a message</h3>
+          <form id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+
+          <div id="contactFormMessage" class="form-message" aria-live="polite"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer small">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo small" href="index.html"><div class="logo-mark">☕</div><div class="logo-text"><span class="brand">The Sai’s</span><span class="sub">Café</span></div></a>
+          <p>Comfort food, crafted coffee, and friendly faces.</p>
+        </div>
+      </div>
+      <div class="container copyright"><small>© <span id="yearContact"></span> The Sai’s Café</small></div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

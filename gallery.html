@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — The Sai’s Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html"><div class="logo-mark">☕</div><div class="logo-text"><span class="brand">The Sai’s</span><span class="sub">Café</span></div></a>
+
+        <nav class="main-nav" id="mainNavGallery">
+          <button id="navToggleGallery" class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn order-btn" href="https://www.ubereats.com" target="_blank" rel="noopener">Order Online</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container gallery-page">
+      <h1>Gallery</h1>
+      <p class="lead">Snapshots from our café — food, drinks, and the cozy interior.</p>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Use descriptive placeholders. Replace these divs with <img src="path/to/photo.jpg"> when you have images. -->
+        <div class="gallery-item" data-caption="Image: Our cozy interior with wooden tables">  <img width="150px" height="200px" src="https://bitesaga.com/wp-content/uploads/2025/01/revamping-your-cafe-creating-the-perfect-cozy-retreat-for-remote-workers-to-inspire-productivity.jpeg" alt="Image: Our cozy interior with wooden tables" class="src"> </div>
+        <div class="gallery-item" data-caption="Image: Barista pulling an espresso shot"> <img width="150px" src="https://thumbs.dreamstime.com/b/pulling-espresso-freshly-ground-coffee-local-cafe-morning-rush-barista-carefully-packs-portafilter-379059831.jpg" alt="Image: Barista pulling an espresso shot" class="src"> </div>
+        <div class="gallery-item" data-caption="Image: Close-up latte art"> <img height="200px" width="150px" src="https://img.freepik.com/free-photo/closeup-barista-making-latte-art_53876-13484.jpg" alt="Image: Close-up latte art" class="src"> </div>
+        <div class="gallery-item" data-caption="Image: Morning sunlight through windows"> <img width="150px" height="200px"  src="https://thumbs.dreamstime.com/b/sunlight-filters-cafes-windows-creating-warm-inviting-atmosphere-customers-ai-cozy-sunlit-cafe-interior-empty-306435819.jpg" alt=" Image: Morning sunlight through windows" class="src"> </div>
+        <div class="gallery-item" data-caption="Image: Plate of avocado toast"> <img  width="150px" height="200px" src="https://fallowrestaurant.com/wp-content/uploads/2024/03/No-Avo-Toast-1-scaled.jpg" alt="Image: Plate of avocado toast"></div>
+        <div class="gallery-item" data-caption="Image: Fresh pastries display"> <img width="150px" height="200px" src="https://www.shutterstock.com/image-photo/mouthwatering-display-colorful-macarons-other-600nw-2532924317.jpg" alt="Image: Fresh pastries display"> </div>
+        <div class="gallery-item" data-caption="Image: Customers enjoying coffee"> <img width="150px" height="200px" src="https://img.freepik.com/premium-photo/busy-cafe-scene-with-diverse-people-socializing-working-customers-enjoying-coffee-conversation-baristas-preparing-drinks-counter-coffee-shop-with-diverse-people-socializing-working_53876-1091113.jpg" alt="Image: Customers enjoying coffee"> </div>
+        <div class="gallery-item" data-caption="Image: Seasonal menu chalkboard"> <img width="150px" height="200px" src="https://i.pinimg.com/736x/c6/0a/7e/c60a7e93fa7db3056069c8773e7695c4.jpg" alt="Image: Seasonal menu chalkboard" class=""> </div>
+      </div>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-content">
+        <button id="lightboxClose" class="lightbox-close" aria-label="Close">✕</button>
+        <div id="lightboxImage" class="lightbox-image"></div>
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer small">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo small" href="index.html"><div class="logo-mark">☕</div><div class="logo-text"><span class="brand">The Sai’s</span><span class="sub">Café</span></div></a>
+          <p>Comfort food, crafted coffee, and friendly faces.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>8258861119 · sairana587@gmail.com</p>
+        </div>
+      </div>
+      <div class="container copyright"><small>© <span id="yearGallery"></span> The Sai’s Café</small></div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
